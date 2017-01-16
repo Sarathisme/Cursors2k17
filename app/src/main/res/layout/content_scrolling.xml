@@ -5,9 +5,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingBottom="16dp"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.sarath.cursors2k17.ScrollingActivity"
     tools:showIn="@layout/activity_scrolling">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -324,7 +329,161 @@
             </LinearLayout>
         </HorizontalScrollView>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="16dp"
+            android:textColor="#000"
+            android:fontFamily="sans-serif-light"
+            android:text="COMPETITIONS"/>
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:scrollbars="none"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="240dp"
+                    android:layout_height="180dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="140dp"
+                            android:paddingLeft="4dp"
+                            android:paddingTop="50dp"
+                            android:textSize="30sp"
+                            android:fontFamily="sans-serif-light"
+                            android:text="Coding Contest"
+                            android:textColor="#fff"
+                            android:background="#90A4AE"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="12dp"
+                            android:fontFamily="sans-serif-light"
+                            android:textStyle="bold"
+                            android:textSize="13sp"
+                            android:textColor="#00b0ff"
+                            android:paddingLeft="4dp"
+                            android:text="LEARN MORE"/>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="240dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="180dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="140dp"
+                            android:paddingLeft="4dp"
+                            android:paddingTop="50dp"
+                            android:textSize="30sp"
+                            android:fontFamily="sans-serif-light"
+                            android:text="Short Film Making"
+                            android:textColor="#fff"
+                            android:background="#FFEB3B"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="12dp"
+                            android:fontFamily="sans-serif-light"
+                            android:textStyle="bold"
+                            android:textSize="13sp"
+                            android:textColor="#00b0ff"
+                            android:paddingLeft="4dp"
+                            android:text="LEARN MORE"/>
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:layout_width="240dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="180dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="140dp"
+                            android:paddingLeft="4dp"
+                            android:paddingTop="50dp"
+                            android:textSize="30sp"
+                            android:fontFamily="sans-serif-light"
+                            android:text="Technical Quiz"
+                            android:textColor="#fff"
+                            android:background="#CCFF90"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="12dp"
+                            android:fontFamily="sans-serif-light"
+                            android:textStyle="bold"
+                            android:textSize="13sp"
+                            android:textColor="#00b0ff"
+                            android:paddingLeft="4dp"
+                            android:text="LEARN MORE"/>
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="180dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/ic_navigate_next_black_24dp"/>
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
         <android.support.v7.widget.CardView
+            android:id="@+id/register"
             android:layout_width="match_parent"
             android:layout_marginTop="16dp"
             android:layout_height="50dp" >
@@ -363,7 +522,7 @@
         </android.support.v7.widget.CardView>
 
     </LinearLayout>
-
+</ScrollView>
 
 
 </android.support.v4.widget.NestedScrollView>

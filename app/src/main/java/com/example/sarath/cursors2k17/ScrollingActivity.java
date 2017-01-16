@@ -2,6 +2,7 @@ package com.example.sarath.cursors2k17;
 
 import android.content.Intent;
 import android.net.Uri;
+import android.os.Binder;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -27,6 +28,16 @@ public class ScrollingActivity extends AppCompatActivity {
 
             }
         });
+
+        View rview = (View)findViewById(R.id.register);
+        rview.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v)
+            {
+                Intent i=new Intent(ScrollingActivity.this,WebViewActivity.class);
+                startActivity(i);
+            }
+        });
     }
 
     @Override
@@ -46,20 +57,16 @@ public class ScrollingActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            MenuItem anits = (MenuItem)findViewById(R.id.action_settings);
-            anits.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener(){
-                @Override
-                public boolean onMenuItemClick(MenuItem item) {
-                    String url="http://www.anits.edu.in";
-                    Intent i=new Intent(Intent.ACTION_VIEW);
-                    i.setData(Uri.parse(url));
-                    startActivity(i);
-                    return false;
-                }
-            });
-
-            return true;
+            call();
         }
         return super.onOptionsItemSelected(item);
     }
+
+    public void call(){
+        Intent i=new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse("http://www.anits.edu.in"));
+        startActivity(i);
+    }
 }
+
+
