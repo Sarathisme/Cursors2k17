@@ -151,6 +151,7 @@
 
                 <android.support.v7.widget.CardView
                     android:layout_width="40dp"
+                    android:id="@+id/mainevents"
                     android:layout_marginLeft="10dp"
                     android:layout_height="180dp">
 
@@ -305,7 +306,7 @@
 
                 <android.support.v7.widget.CardView
                     android:layout_width="40dp"
-                    android:id="@+id/competition"
+                    android:id="@+id/spotevents"
                     android:layout_marginLeft="10dp"
                     android:layout_height="180dp">
 
@@ -460,6 +461,7 @@
 
                 <android.support.v7.widget.CardView
                     android:layout_width="40dp"
+                    android:id="@+id/competition"
                     android:layout_marginLeft="10dp"
                     android:layout_height="180dp">
 

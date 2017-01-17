@@ -20,8 +20,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".WebViewActivity" android:label="Site" android:parentActivityName=".ScrollingActivity"/>
-        <activity android:name=".Display" android:label="More Info" android:parentActivityName=".ScrollingActivity"></activity>
+        <activity
+            android:name=".WebViewActivity"
+            android:label="Site"
+            android:parentActivityName=".ScrollingActivity" />
+        <activity android:name=".Competition" android:label="Competition"
+            android:parentActivityName=".ScrollingActivity"  />
+        <activity android:name=".MainEvents" android:label="Main Events"
+            android:parentActivityName=".ScrollingActivity" />
+        <activity android:name=".SpotEvents" android:label="Spot Events"
+            android:parentActivityName=".ScrollingActivity" ></activity>
     </application>
 
 </manifest>

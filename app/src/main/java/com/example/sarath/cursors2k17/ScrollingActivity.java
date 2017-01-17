@@ -41,11 +41,28 @@ public class ScrollingActivity extends AppCompatActivity {
             }
         });
 
-        View view = (View)findViewById(R.id.competition);
+        View view2 = (View)findViewById(R.id.spotevents);
+        view2.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                startActivity(new Intent(ScrollingActivity.this,SpotEvents.class));
+
+            }
+        });
+
+        View view = (View)findViewById(R.id.mainevents);
         view.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                startActivity(new Intent(ScrollingActivity.this,Display.class));
+                startActivity(new Intent(ScrollingActivity.this,MainEvents.class));
+            }
+        });
+
+        View view1 = (View)findViewById(R.id.competition);
+        view1.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                startActivity(new Intent(ScrollingActivity.this,Competition.class));
             }
         });
     }

@@ -6,7 +6,7 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-public class Display extends AppCompatActivity {
+public class Competition extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -14,9 +14,9 @@ public class Display extends AppCompatActivity {
         setContentView(R.layout.list_view);
 
         ArrayList<Data> list =new ArrayList<Data>();
-        list.add(new Data("Coding Contest"));
-        list.add(new Data("Short Film Making"));
-        list.add(new Data("Technical Quiz"));
+            list.add(new Data("Coding Contest"));
+            list.add(new Data("Short Film Making"));
+            list.add(new Data("Technical Quiz"));
         DisplayAdapter adapter = new DisplayAdapter(this,list);
         ListView listView = (ListView)findViewById(R.id.list);
         listView.setAdapter(adapter);
