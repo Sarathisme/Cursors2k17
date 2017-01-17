@@ -17,6 +17,8 @@ public class Competition extends AppCompatActivity {
             list.add(new Data("Coding Contest"));
             list.add(new Data("Short Film Making"));
             list.add(new Data("Technical Quiz"));
+            list.add(new Data("Photography Contest"));
+            list.add(new Data("Treasure Hunt"));
         DisplayAdapter adapter = new DisplayAdapter(this,list);
         ListView listView = (ListView)findViewById(R.id.list);
         listView.setAdapter(adapter);

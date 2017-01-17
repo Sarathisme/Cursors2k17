@@ -17,6 +17,9 @@ public class MainEvents extends AppCompatActivity {
         list.add(new Data("Hackathon"));
         list.add(new Data("Debugging"));
         list.add(new Data("Coding"));
+        list.add(new Data("Paper Presentation"));
+        list.add(new Data("Poster Presentation"));
+        list.add(new Data("Ad Making"));
         DisplayAdapter adapter = new DisplayAdapter(this,list);
         ListView listView = (ListView)findViewById(R.id.list);
         listView.setAdapter(adapter);

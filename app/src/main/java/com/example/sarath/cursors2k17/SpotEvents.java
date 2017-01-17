@@ -17,6 +17,10 @@ public class SpotEvents extends AppCompatActivity {
         list.add(new Data("Mini Militia"));
         list.add(new Data("Halloween"));
         list.add(new Data("Quiz"));
+        list.add(new Data("LAN Gaming"));
+        list.add(new Data("Anthakshari"));
+        list.add(new Data("Logo Designing"));
+        list.add(new Data("Dubsmash"));
         DisplayAdapter adapter = new DisplayAdapter(this,list);
         ListView listView = (ListView)findViewById(R.id.list);
         listView.setAdapter(adapter);
