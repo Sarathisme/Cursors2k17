@@ -12,6 +12,8 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import java.util.ArrayList;
+
 public class ScrollingActivity extends AppCompatActivity {
 
     @Override
@@ -36,6 +38,14 @@ public class ScrollingActivity extends AppCompatActivity {
             {
                 Intent i=new Intent(ScrollingActivity.this,WebViewActivity.class);
                 startActivity(i);
+            }
+        });
+
+        View view = (View)findViewById(R.id.competition);
+        view.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                startActivity(new Intent(ScrollingActivity.this,Display.class));
             }
         });
     }
