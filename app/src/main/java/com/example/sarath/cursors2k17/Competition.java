@@ -14,11 +14,10 @@ public class Competition extends AppCompatActivity {
         setContentView(R.layout.list_view);
 
         ArrayList<Data> list =new ArrayList<Data>();
-            list.add(new Data("Coding Contest"));
-            list.add(new Data("Short Film Making"));
-            list.add(new Data("Technical Quiz"));
-            list.add(new Data("Photography Contest"));
-            list.add(new Data("Treasure Hunt"));
+            list.add(new Data("SHORT FILM MAKING",R.drawable.shortfilm));
+            list.add(new Data("MR & MRS CURSORS 2k17",R.drawable.mrmrms));
+            list.add(new Data("PHOTOGRAPHY CONTEST",R.drawable.photo));
+            list.add(new Data("TREASURE HUNT",R.drawable.treasure));
         DisplayAdapter adapter = new DisplayAdapter(this,list);
         ListView listView = (ListView)findViewById(R.id.list);
         listView.setAdapter(adapter);

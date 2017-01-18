@@ -14,13 +14,13 @@ public class SpotEvents extends AppCompatActivity {
         setContentView(R.layout.list_view);
 
         ArrayList<Data> list =new ArrayList<Data>();
-        list.add(new Data("Mini Militia"));
-        list.add(new Data("Halloween"));
-        list.add(new Data("Quiz"));
-        list.add(new Data("LAN Gaming"));
-        list.add(new Data("Anthakshari"));
-        list.add(new Data("Logo Designing"));
-        list.add(new Data("Dubsmash"));
+        list.add(new Data("MINI MILITIA",R.drawable.minimilitia));
+        list.add(new Data("HALLOWEEN",R.drawable.halloween));
+        list.add(new Data("LAN GAMING",R.drawable.lan));
+        list.add(new Data("ANTHAKSHARI",R.drawable.antakshari));
+        list.add(new Data("LOGO IDENTIFICATION",R.drawable.logo));
+        list.add(new Data("DUBSMASH",R.drawable.dubsmash));
+        list.add(new Data("IMPROMPTU SPEAKING",R.drawable.impromptu));
         DisplayAdapter adapter = new DisplayAdapter(this,list);
         ListView listView = (ListView)findViewById(R.id.list);
         listView.setAdapter(adapter);
