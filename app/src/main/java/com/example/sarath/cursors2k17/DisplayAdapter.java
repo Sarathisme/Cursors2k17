@@ -39,6 +39,7 @@ public class DisplayAdapter extends ArrayAdapter<Data> {
         TextView back = (TextView)listView.findViewById(R.id.image);
         Drawable drawable = getContext().getResources().getDrawable(data.getmImage());
         back.setBackground(drawable);
+
         
         return listView;
     }

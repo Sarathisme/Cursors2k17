@@ -8,14 +8,19 @@ public class Data {
 
     private String mTitle;
     private int mImage;
-    public Data(String title,int image){
+    private int mData;
+    public Data(String title,int image,int data){
         mTitle=title;
         mImage=image;
+        mData=data;
     }
 
     public String getmTitle(){
         return mTitle;
     }
     public int getmImage(){return mImage;}
+    public int getmData(){
+        return mData;
+    }
 
 }
