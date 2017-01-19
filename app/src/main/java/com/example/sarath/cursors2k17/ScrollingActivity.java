@@ -1,6 +1,7 @@
 package com.example.sarath.cursors2k17;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.net.Uri;
 import android.os.Binder;
 import android.os.Bundle;
@@ -19,6 +20,7 @@ public class ScrollingActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setRequestedOrientation (ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         setContentView(R.layout.activity_scrolling);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -65,6 +67,150 @@ public class ScrollingActivity extends AppCompatActivity {
                 startActivity(new Intent(ScrollingActivity.this,Competition.class));
             }
         });
+
+        View workshop = (View)findViewById(R.id.workshop);
+        workshop.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ScrollingActivity.this,Workshop.class));
+            }
+        });
+
+        View l1 = (View)findViewById(R.id.hackathon);
+        l1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(ScrollingActivity.this,MoreActivity.class);
+                Bundle bundle = new Bundle();
+                String data1 = getResources().getString(R.string.dummy);
+                bundle.putString("data",data1);
+                bundle.putString("title","HACKATHON");
+                bundle.putInt("image",R.drawable.hackathon);
+                i.putExtras(bundle);
+                startActivity(i);
+
+            }
+        });
+
+        View l2 = (View)findViewById(R.id.techotron);
+        l2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(ScrollingActivity.this,MoreActivity.class);
+                Bundle bundle = new Bundle();
+                String data1 = getResources().getString(R.string.dummy);
+                bundle.putString("data",data1);
+                bundle.putString("title","TECHNOTRON");
+                bundle.putInt("image",R.drawable.tech);
+                i.putExtras(bundle);
+                startActivity(i);
+            }
+        });
+
+        View l3 = (View)findViewById(R.id.coding);
+        l3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(ScrollingActivity.this,MoreActivity.class);
+                Bundle bundle = new Bundle();
+                String data1 = getResources().getString(R.string.dummy);
+                bundle.putString("data",data1);
+                bundle.putString("title","CODING");
+                bundle.putInt("image",R.drawable.coding);
+                i.putExtras(bundle);
+                startActivity(i);
+            }
+        });
+
+        View l4 = (View)findViewById(R.id.mini);
+        l4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(ScrollingActivity.this,MoreActivity.class);
+                Bundle bundle = new Bundle();
+                String data1 = getResources().getString(R.string.dummy);
+                bundle.putString("data",data1);
+                bundle.putString("title","MINI MILITIA");
+                bundle.putInt("image",R.drawable.minimilitia);
+                i.putExtras(bundle);
+                startActivity(i);
+            }
+        });
+
+        View l5 = (View)findViewById(R.id.halloween);
+        l5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(ScrollingActivity.this,MoreActivity.class);
+                Bundle bundle = new Bundle();
+                String data1 = getResources().getString(R.string.dummy);
+                bundle.putString("data",data1);
+                bundle.putString("title","HALLOWEEN");
+                bundle.putInt("image",R.drawable.halloween);
+                i.putExtras(bundle);
+                startActivity(i);
+            }
+        });
+
+        View l6 = (View)findViewById(R.id.dubsmash);
+        l6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(ScrollingActivity.this,MoreActivity.class);
+                Bundle bundle = new Bundle();
+                String data1 = getResources().getString(R.string.dummy);
+                bundle.putString("data",data1);
+                bundle.putString("title","DUBSMASH");
+                bundle.putInt("image",R.drawable.dubsmash);
+                i.putExtras(bundle);
+                startActivity(i);
+            }
+        });
+
+        View l7 = (View)findViewById(R.id.photo);
+        l7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(ScrollingActivity.this,MoreActivity.class);
+                Bundle bundle = new Bundle();
+                String data1 = getResources().getString(R.string.dummy);
+                bundle.putString("data",data1);
+                bundle.putString("title","PHOTOGRAPHY CONTEST");
+                bundle.putInt("image",R.drawable.photo);
+                i.putExtras(bundle);
+                startActivity(i);
+            }
+        });
+
+        View l8 = (View)findViewById(R.id.shortfilm);
+        l8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(ScrollingActivity.this,MoreActivity.class);
+                Bundle bundle = new Bundle();
+                String data1 = getResources().getString(R.string.dummy);
+                bundle.putString("data",data1);
+                bundle.putString("title","SHORT FILM MAKING");
+                bundle.putInt("image",R.drawable.shortfilm);
+                i.putExtras(bundle);
+                startActivity(i);
+            }
+        });
+
+        View l9 = (View)findViewById(R.id.treasure);
+        l9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(ScrollingActivity.this,MoreActivity.class);
+                Bundle bundle = new Bundle();
+                String data1 = getResources().getString(R.string.dummy);
+                bundle.putString("data",data1);
+                bundle.putString("title","TREASURE HUNT");
+                bundle.putInt("image",R.drawable.treasure);
+                i.putExtras(bundle);
+                startActivity(i);
+            }
+        });
     }
 
     @Override
@@ -74,6 +220,10 @@ public class ScrollingActivity extends AppCompatActivity {
         return true;
     }
 
+    @Override
+    public void onBackPressed() {
+        finishAffinity();
+    }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

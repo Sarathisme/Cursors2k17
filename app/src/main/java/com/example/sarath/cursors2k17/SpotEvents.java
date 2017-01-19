@@ -2,6 +2,7 @@ package com.example.sarath.cursors2k17;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -15,6 +16,7 @@ public class SpotEvents extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setRequestedOrientation (ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         setContentView(R.layout.list_view);
 
         final ArrayList<Data> list =new ArrayList<Data>();
@@ -48,8 +50,12 @@ public class SpotEvents extends AppCompatActivity {
     public void callActivity(Bundle b){
         Context context = getBaseContext();
         Intent i = new Intent(context,MoreActivity.class);
+        i.putExtras(b);
         startActivity(i);
-       // i.putExtras(b);
+    }
 
+    @Override
+    public void onBackPressed() {
+        finish();
     }
 }
