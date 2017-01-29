@@ -42,6 +42,16 @@
             android:label="@string/title_activity_more"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Workshop" android:label="WORKSHOP" android:parentActivityName=".ScrollingActivity"></activity>
+        <service android:name=".MyFireBaseService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:name=".FirebaseIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>

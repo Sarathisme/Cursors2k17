@@ -20,12 +20,12 @@ public class MainEvents extends AppCompatActivity {
         setContentView(R.layout.list_view);
 
         final ArrayList<Data> list =new ArrayList<Data>();
-        list.add(new Data("HACKATHON",R.drawable.hackathon,R.string.dummy));
-        list.add(new Data("TECHNOTRON",R.drawable.tech,R.string.dummy));
-        list.add(new Data("CODING",R.drawable.coding,R.string.dummy));
-        list.add(new Data("PAPER PRESENTATION",R.drawable.paperpresentation,R.string.dummy));
-        list.add(new Data("POSTER PRESENTATION",R.drawable.poster,R.string.dummy));
-        list.add(new Data("AD MAKING",R.drawable.admaking,R.string.dummy));
+        list.add(new Data("HACKATHON",R.drawable.hackathon,R.string.hackathon));
+        list.add(new Data("TECHNITRON",R.drawable.tech,R.string.technitron));
+        list.add(new Data("CODING",R.drawable.coding,R.string.coding));
+        list.add(new Data("PAPER PRESENTATION",R.drawable.paperpresentation,R.string.paper));
+        list.add(new Data("POSTER PRESENTATION",R.drawable.poster,R.string.poster));
+        list.add(new Data("AD MAKING",R.drawable.admaking,R.string.admaking));
         DisplayAdapter adapter = new DisplayAdapter(this,list);
         ListView listView = (ListView)findViewById(R.id.list);
         listView.setAdapter(adapter);

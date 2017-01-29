@@ -14,13 +14,14 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="18sp"
+        android:textSize="16sp"
         android:paddingTop="4dp"
         android:paddingLeft="4dp"
-        android:textColor="#fff"
+        android:textColor="@color/events"
         android:background="@color/colorAccent"
         android:textStyle="bold"
-        android:fontFamily="sans-serif-light"
+        android:paddingBottom="4dp"
+        android:fontFamily="casual"
         android:text="SPOT EVENTS"/>
 
 
@@ -64,7 +65,7 @@
                         android:fontFamily="sans-serif-light"
                         android:textStyle="bold"
                         android:textSize="13sp"
-                        android:textColor="#00b0ff"
+                        android:textColor="@color/title"
                         android:paddingLeft="4dp"
                         android:text="MINI MILITIA"/>
 
@@ -100,7 +101,7 @@
                         android:fontFamily="sans-serif-light"
                         android:textStyle="bold"
                         android:textSize="13sp"
-                        android:textColor="#00b0ff"
+                        android:textColor="@color/title"
                         android:paddingLeft="4dp"
                         android:text="HALLOWEEN"/>
 
@@ -136,7 +137,7 @@
                         android:fontFamily="sans-serif-light"
                         android:textStyle="bold"
                         android:textSize="13sp"
-                        android:textColor="#00b0ff"
+                        android:textColor="@color/title"
                         android:paddingLeft="4dp"
                         android:text="DUBSMASH"/>
 

@@ -82,7 +82,7 @@ public class ScrollingActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(ScrollingActivity.this,MoreActivity.class);
                 Bundle bundle = new Bundle();
-                String data1 = getResources().getString(R.string.dummy);
+                String data1 = getResources().getString(R.string.hackathon);
                 bundle.putString("data",data1);
                 bundle.putString("title","HACKATHON");
                 bundle.putInt("image",R.drawable.hackathon);
@@ -98,9 +98,9 @@ public class ScrollingActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(ScrollingActivity.this,MoreActivity.class);
                 Bundle bundle = new Bundle();
-                String data1 = getResources().getString(R.string.dummy);
+                String data1 = getResources().getString(R.string.technitron);
                 bundle.putString("data",data1);
-                bundle.putString("title","TECHNOTRON");
+                bundle.putString("title","TECHNITRON");
                 bundle.putInt("image",R.drawable.tech);
                 i.putExtras(bundle);
                 startActivity(i);
@@ -113,7 +113,7 @@ public class ScrollingActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(ScrollingActivity.this,MoreActivity.class);
                 Bundle bundle = new Bundle();
-                String data1 = getResources().getString(R.string.dummy);
+                String data1 = getResources().getString(R.string.coding);
                 bundle.putString("data",data1);
                 bundle.putString("title","CODING");
                 bundle.putInt("image",R.drawable.coding);
@@ -173,7 +173,7 @@ public class ScrollingActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(ScrollingActivity.this,MoreActivity.class);
                 Bundle bundle = new Bundle();
-                String data1 = getResources().getString(R.string.dummy);
+                String data1 = getResources().getString(R.string.phtography);
                 bundle.putString("data",data1);
                 bundle.putString("title","PHOTOGRAPHY CONTEST");
                 bundle.putInt("image",R.drawable.photo);
@@ -188,7 +188,7 @@ public class ScrollingActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(ScrollingActivity.this,MoreActivity.class);
                 Bundle bundle = new Bundle();
-                String data1 = getResources().getString(R.string.dummy);
+                String data1 = getResources().getString(R.string.shortfilm);
                 bundle.putString("data",data1);
                 bundle.putString("title","SHORT FILM MAKING");
                 bundle.putInt("image",R.drawable.shortfilm);
@@ -203,7 +203,7 @@ public class ScrollingActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(ScrollingActivity.this,MoreActivity.class);
                 Bundle bundle = new Bundle();
-                String data1 = getResources().getString(R.string.dummy);
+                String data1 = getResources().getString(R.string.treasurehunt);
                 bundle.putString("data",data1);
                 bundle.putString("title","TREASURE HUNT");
                 bundle.putInt("image",R.drawable.treasure);

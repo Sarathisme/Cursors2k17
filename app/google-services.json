@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "877082848271",
+    "firebase_url": "https://cursors-e5ee1.firebaseio.com",
+    "project_id": "cursors-e5ee1",
+    "storage_bucket": "cursors-e5ee1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:877082848271:android:23a6757bbedf04c4",
+        "android_client_info": {
+          "package_name": "com.example.sarath.cursors2k17"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "877082848271-f66r9ggmml9fo7970lpl92imco6hkob1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGiT4f6bvbd_n6A0zSvvIy5m3CMHLVekM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -20,15 +20,29 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="REGISTRATION"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 android:background="@color/colorAccent"
                 android:paddingLeft="8dp"
                 android:textStyle="bold"
                 android:paddingBottom="4dp"
-                android:fontFamily="sans-serif-light"
+                android:fontFamily="casual"
                 android:paddingTop="8dp"
-                android:textColor="#fff"
+                android:textColor="@color/events"
                 android:layout_gravity="start" />
+
+            <TextView
+                android:id="@+id/dates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FEST IS ON MARCH 2ND AND 3RD"
+                android:paddingTop="8dp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/registration"
+                android:fontFamily="casual"
+                android:paddingLeft="8dp"/>
+
 
             <TextView
                 android:id="@+id/noncsi"

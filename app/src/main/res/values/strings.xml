@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CURSORS 2K17</string>
+    <string name="app_name">CURSORS</string>
     <string name="action_settings">Settings</string>
     <string name="dummy">"Components with responsive elevations may encounter other components as they move between "
         "their resting elevations and dynamic elevation offsets. Because material cannot pass "
@@ -12,4 +12,15 @@
         "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
         "when a user tries to pick up one of cards.\n\n"</string>
     <string name="title_activity_more">More Info</string>
+
+    <string name="hackathon">"Hackathon is a design sprint-like event in which computer programmers involve in software development. It lasts for two days where the team combinely engage in colloborative computer programming""\n\n""The Team can consist a maximum of two members""\n\n"For further details contact"</string>
+    <string name="technitron">"Technitrone is basically a technical quiz. This event is to test the knowledge and quizzing speed of the participant.""Spontenity and team coordination plays the winning strategies here""Take part in technitrone and prove your talent""\n\n""The team consists of a maximum of two members.""\n\n""For further details contact"</string>
+    <string name="coding">"You have seen the craze for learning code. But what exactly is coding? Coding is what makes it possible for as to create computer software, apps and websites""\n\n"CURSORS2K17,being a technical event, provides you the right platform for the real coder in you.""\n\n""Jin us to develop the best in you""\n\n""For further details contact"</string>
+    <string name="paper">"Paper presentation is all about how you put your topic or present your topic. This brings out your presentation skills and your idea that is presented.""\n\n""Join us in this event and make your profile technically strong.""\n\n""The team may consist of maximum of four members""\n\n""For further details contact"</string>
+    <string name="poster">"A Poster Presentation is a display of information that you have collected on a specific subject that you can bring together for one common goal.""\n\n""Showcase your talent by participating in the poster presentation contest, the most innovative step initiated by CURSORS2K17.""\n\n""A team can contain a maximum of four students.""\n\n""For further details contact"</string>
+    <string name="admaking">"Put a mark through your creativity""\n\n""SPARK SOMETHING NEW""\n\n""Framing out our thoughts into videos which will enrich your skills and brings out imaginations into motions and gives life to characters will ameliorate ones skills""\n\n""The team can consist a maximumof five members""\n\n""For further details contact"</string>
+    <string name="shortfilm">"Making a short film with the availability of today's technology has become a relatively simple endeavour for most people""\n\n""Moving down the line from your photographic skills is short film making. CURSORS2K17 is with the innovation providing a platform for all young directors to deliver their excellence in the short film contest""\n\n""For further details contact"</string>
+    <string name="treasurehunt">"HUNT THE TREASURE""\n\n""Its like a treasure hunt in a way and you are a detective. Extraordinary things always gide in places where people never think to look.""\n\n""Go crazy to find a ray for your treasure"</string>
+    <string name="phtography">"Unleash the potential in you by taking part in capturing the live moments""\n\n""'PHOTOGRAPHY CONTEST' is here for you to expense your thrill for making avirtual reality into a magnificent memory""\n\n""Get ready to take in a theme based photography contest.""\n\n""For further details contact"</string>
+
 </resources>
