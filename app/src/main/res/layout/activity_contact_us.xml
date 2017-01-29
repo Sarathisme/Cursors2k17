@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_contact_us"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.example.sarath.cursors2k17.ContactUs">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#000"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="Feel Free to Contact Us! :) :) :)"/>
+
+    <TextView
+        android:id="@+id/pavan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:padding="20dp"
+        android:fontFamily="casual"
+        android:textSize="24sp"
+        android:textColor="#000"
+        android:layout_alignParentLeft="true"
+        android:text="Pavan Kumar"/>
+
+    <TextView
+        android:id="@+id/pavanno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/pavan"
+        android:layout_alignParentRight="true"
+        android:text="+91 9701850855"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/sravya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pavan"
+        android:padding="20dp"
+        android:fontFamily="casual"
+        android:textSize="24sp"
+        android:textColor="#000"
+        android:layout_alignParentLeft="true"
+        android:text="Sravya Reddy"/>
+
+    <TextView
+        android:id="@+id/sravyano"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/sravya"
+        android:layout_alignParentRight="true"
+        android:text="+91 7702578808"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:textColor="#000"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:textSize="24sp"
+        android:text="Mail Us At "/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/sravya"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/smiley"/>
+
+    <TextView
+        android:id="@+id/mailId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignBaseline="@id/mail"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_blue_bright"
+        android:text="cse.anits@anits.edu.in"/>
+</RelativeLayout>

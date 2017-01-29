@@ -20,4 +20,10 @@
         android:orderInCategory="300"
         android:title="Contact Us"
         android:enabled="true"/>
+
+    <item
+        android:id="@+id/maps"
+        android:orderInCategory="400"
+        android:title="Where is Cursors?"
+        android:enabled="true"/>
 </menu>

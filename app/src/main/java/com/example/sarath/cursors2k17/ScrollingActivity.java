@@ -29,7 +29,9 @@ public class ScrollingActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse("http://cursors2k17.anits.edu.in"));
+                startActivity(i);
             }
         });
 
@@ -38,7 +40,8 @@ public class ScrollingActivity extends AppCompatActivity {
             @Override
             public void onClick(View v)
             {
-                Intent i=new Intent(ScrollingActivity.this,WebViewActivity.class);
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse("http://cursors2k17.anits.edu.in/registration.php"));
                 startActivity(i);
             }
         });
@@ -128,7 +131,7 @@ public class ScrollingActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(ScrollingActivity.this,MoreActivity.class);
                 Bundle bundle = new Bundle();
-                String data1 = getResources().getString(R.string.dummy);
+                String data1 = getResources().getString(R.string.mini);
                 bundle.putString("data",data1);
                 bundle.putString("title","MINI MILITIA");
                 bundle.putInt("image",R.drawable.minimilitia);
@@ -158,7 +161,7 @@ public class ScrollingActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(ScrollingActivity.this,MoreActivity.class);
                 Bundle bundle = new Bundle();
-                String data1 = getResources().getString(R.string.dummy);
+                String data1 = getResources().getString(R.string.dubsmash);
                 bundle.putString("data",data1);
                 bundle.putString("title","DUBSMASH");
                 bundle.putInt("image",R.drawable.dubsmash);
@@ -236,6 +239,15 @@ public class ScrollingActivity extends AppCompatActivity {
         if (id == R.id.action_settings) {
             call();
         }
+        if (id==R.id.aboutus){
+            callaboutus();
+        }
+        if (id==R.id.contactus){
+            callcontactus();
+        }
+        if(id == R.id.maps){
+            callMaps();
+        }
         return super.onOptionsItemSelected(item);
     }
 
@@ -243,6 +255,18 @@ public class ScrollingActivity extends AppCompatActivity {
         Intent i=new Intent(Intent.ACTION_VIEW);
         i.setData(Uri.parse("http://www.anits.edu.in"));
         startActivity(i);
+    }
+
+    public void callaboutus(){
+        startActivity(new Intent(ScrollingActivity.this,AboutUs.class));
+    }
+
+    public void callcontactus(){
+        startActivity(new Intent(ScrollingActivity.this,ContactUs.class));
+    }
+
+    public void callMaps(){
+        startActivity(new Intent(ScrollingActivity.this,MapsActivity.class));
     }
 }
 

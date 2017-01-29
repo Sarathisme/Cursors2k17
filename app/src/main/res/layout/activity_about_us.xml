@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_about_us"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sarath.cursors2k17.AboutUs">
+
+    <TextView
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:text="Cursors 2k17"
+        android:textColor="#fff"
+        android:textSize="40sp"
+        android:paddingTop="150dp"
+        android:background="@drawable/banner"/>
+
+    <TextView
+        android:id="@+id/data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main"
+        android:padding="16dp"
+        android:text="@string/dummy"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="16sp"/>
+
+</RelativeLayout>

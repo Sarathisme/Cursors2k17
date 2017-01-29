@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.graphics.drawable.Drawable;
 import android.media.Image;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -52,7 +53,8 @@ public class MoreActivity extends AppCompatActivity {
         b.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent i=new Intent(MoreActivity.this,WebViewActivity.class);
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse("http://cursors2k17.anits.edu.in/registration.php"));
                 startActivity(i);
             }
         });

@@ -20,13 +20,13 @@ public class SpotEvents extends AppCompatActivity {
         setContentView(R.layout.list_view);
 
         final ArrayList<Data> list =new ArrayList<Data>();
-        list.add(new Data("MINI MILITIA",R.drawable.minimilitia,R.string.dummy));
+        list.add(new Data("MINI MILITIA",R.drawable.minimilitia,R.string.mini));
         list.add(new Data("HALLOWEEN",R.drawable.halloween,R.string.dummy));
-        list.add(new Data("LAN GAMING",R.drawable.lan,R.string.dummy));
-        list.add(new Data("ANTHAKSHARI",R.drawable.antakshari,R.string.dummy));
-        list.add(new Data("LOGO IDENTIFICATION",R.drawable.logo,R.string.dummy));
-        list.add(new Data("DUBSMASH",R.drawable.dubsmash,R.string.dummy));
-        list.add(new Data("IMPROMPTU SPEAKING",R.drawable.impromptu,R.string.dummy));
+        list.add(new Data("LAN GAMING",R.drawable.lan,R.string.lan));
+        list.add(new Data("ANTHAKSHARI",R.drawable.antakshari,R.string.antakshari));
+        list.add(new Data("LOGO IDENTIFICATION",R.drawable.logo,R.string.logo));
+        list.add(new Data("DUBSMASH",R.drawable.dubsmash,R.string.dubsmash));
+        list.add(new Data("IMPROMPTU SPEAKING",R.drawable.impromptu,R.string.impromptu));
         DisplayAdapter adapter = new DisplayAdapter(this,list);
         ListView listView = (ListView)findViewById(R.id.list);
         listView.setAdapter(adapter);
