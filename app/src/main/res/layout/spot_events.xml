@@ -92,7 +92,7 @@
                         android:textSize="30sp"
                         android:fontFamily="sans-serif-light"
                         android:textColor="#fff"
-                        android:background="@drawable/halloween"/>
+                        android:background="@drawable/lan"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -103,7 +103,7 @@
                         android:textSize="13sp"
                         android:textColor="@color/title"
                         android:paddingLeft="4dp"
-                        android:text="HALLOWEEN"/>
+                        android:text="LAN GAMING"/>
 
 
                 </LinearLayout>

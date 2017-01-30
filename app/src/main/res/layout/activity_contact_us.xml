@@ -93,5 +93,5 @@
         android:textSize="20sp"
         android:textStyle="bold"
         android:textColor="@android:color/holo_blue_bright"
-        android:text="cse.anits@anits.edu.in"/>
+        android:text="cursors2k17@anits.edu.in"/>
 </RelativeLayout>

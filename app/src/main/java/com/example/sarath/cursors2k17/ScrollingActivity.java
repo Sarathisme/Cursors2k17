@@ -146,10 +146,10 @@ public class ScrollingActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(ScrollingActivity.this,MoreActivity.class);
                 Bundle bundle = new Bundle();
-                String data1 = getResources().getString(R.string.dummy);
+                String data1 = getResources().getString(R.string.lan);
                 bundle.putString("data",data1);
-                bundle.putString("title","HALLOWEEN");
-                bundle.putInt("image",R.drawable.halloween);
+                bundle.putString("title","LAN GAMING");
+                bundle.putInt("image",R.drawable.lan);
                 i.putExtras(bundle);
                 startActivity(i);
             }
