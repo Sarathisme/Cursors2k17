@@ -31,7 +31,21 @@
 
         <include layout="@layout/registration"/>
 
-        <include layout="@layout/workshop"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="#000"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:text="Developed By Sarath Sattiraju"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
 
     </LinearLayout>
 </ScrollView>

@@ -19,7 +19,7 @@ public class Competition extends AppCompatActivity {
 
         final ArrayList<Data> list =new ArrayList<Data>();
             list.add(new Data("SHORT FILM MAKING",R.drawable.shortfilm,R.string.shortfilm));
-            list.add(new Data("MR & MS CURSORS 2k17",R.drawable.mrmrms,R.string.dummy));
+            list.add(new Data("MR & MS CURSORS 2k17",R.drawable.mrmrms,R.string.mrmiss));
             list.add(new Data("PHOTOGRAPHY CONTEST",R.drawable.photo,R.string.phtography));
             list.add(new Data("TREASURE HUNT",R.drawable.treasure,R.string.treasurehunt));
         DisplayAdapter adapter = new DisplayAdapter(this,list);

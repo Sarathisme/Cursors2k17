@@ -49,8 +49,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="NON-CSI: ₹600"
+                android:textColor="#000"
                 android:layout_marginTop="20dp"
-                android:textStyle="normal"
+                android:textStyle="bold"
                 android:layout_alignParentLeft="true"
                 android:layout_centerVertical="true"
                 android:fontFamily="casual"
@@ -60,9 +61,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="CSI: ₹500"
+                android:textColor="#000"
                 android:layout_alignParentLeft="true"
                 android:layout_below="@id/noncsi"
-                android:textStyle="normal"
+                android:textStyle="bold"
                 android:fontFamily="sans-serif-light"
                 android:paddingLeft="8dp"/>
 

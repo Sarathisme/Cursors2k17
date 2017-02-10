@@ -71,14 +71,6 @@ public class ScrollingActivity extends AppCompatActivity {
             }
         });
 
-        View workshop = (View)findViewById(R.id.workshop);
-        workshop.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(ScrollingActivity.this,Workshop.class));
-            }
-        });
-
         View l1 = (View)findViewById(R.id.hackathon);
         l1.setOnClickListener(new View.OnClickListener() {
             @Override

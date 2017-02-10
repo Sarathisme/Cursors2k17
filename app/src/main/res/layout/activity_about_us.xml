@@ -22,6 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/main"
         android:padding="16dp"
+        android:fontFamily="casual"
         android:text="@string/cursors"
         android:textAlignment="center"
         android:textColor="#000"
