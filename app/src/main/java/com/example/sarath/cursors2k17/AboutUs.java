@@ -1,6 +1,7 @@
 package com.example.sarath.cursors2k17;
 
 import android.support.v7.app.AppCompatActivity;
+import android.support.v4.app.TaskStackBuilder;
 import android.os.Bundle;
 
 public class AboutUs extends AppCompatActivity {
@@ -11,8 +12,4 @@ public class AboutUs extends AppCompatActivity {
         setContentView(R.layout.activity_about_us);
     }
 
-    @Override
-    public void onBackPressed(){
-        finish();
-    }
 }

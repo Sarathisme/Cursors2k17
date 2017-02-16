@@ -13,9 +13,6 @@ import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 
-/**
- * Created by sarath on 17/1/17.
- */
 
 public class DisplayAdapter extends ArrayAdapter<Data> {
 
